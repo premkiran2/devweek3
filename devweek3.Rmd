@@ -14,7 +14,10 @@ library(plotly)
 data(mtcars)
 head(mtcars,100)
 ```
-From this car google data set we created some explortaory graphs which can be useful for humans to analyse the relation between these variables such as mileage gives verses weigth of data such as number of cylinders used, number of gears it has, number of carbs it has. And also we can cheack the relation between horse power to mileage or qsec to mileage. We can create ourdesired graph as custmer needed it by taking the insights required for it inti consideration.
+From this car google data set we created some explortaory graphs which can be useful for humans to analyse the relation between these variables such as mileage gives verses
+weigth of data such as number of cylinders used, number of gears it has, number of carbs it has. And also we can cheack the relation between horse power to mileage or qsec 
+to mileage. We can create ourdesired graph as custmer needed it by taking the insights required for it inti consideration.
+
 In this i plotted the graph between mileage(mpg) verses weight.
 ```{r}
 plot_ly(mtcars) %>%
@@ -37,7 +40,8 @@ In the above i used scaterred plot for representing the output data.
 
 And i used different colour code and colour to easily distingush data from other output which is best for humans to see the difference betwenn with naked eye.
 
-There are diffferent ways to produce the output but for this model of output scatter plot is best suitable and i used it to get the desired output for my peer graded assignment.
+There are diffferent ways to produce the output but for this model of output scatter plot is best suitable and i used it to get the desired output for my
+peer graded assignment.
 
 This assignment helped me a lot to get know about the colour codes, plots, getting relationsships between data. It is helpful for use for doing this peer and it inceases
 the thinkng ability of use.

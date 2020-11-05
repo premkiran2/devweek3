@@ -1,0 +1,37 @@
+---
+title: "Developing_week3"
+author: "Prem Kiran P"
+date: "11/5/2020"
+output:
+  html_document: default
+  word_document: default
+---
+
+---
+##Variation of mileage with respect to those features of the vehicle.
+```{r}
+library(plotly)
+data(mtcars)
+head(mtcars,100)
+```
+From this car google data set we created some explortaory graphs which can be useful for humans to analyse the relation between these variables such as mileage gives verses weigth of data such as number of cylinders used, number of gears it has, number of carbs it has. And also we can cheack the relation between horse power to mileage or qsec to mileage. We can create ourdesired graph as custmer needed it by taking the insights required for it inti consideration.
+In this i plotted the graph between mileage(mpg) verses weight.
+```{r}
+plot_ly(mtcars) %>%
+    add_trace(x = ~mpg, y = ~cyl, type="scatter", mode = "markers",name = "Total No of cyinder", legendgroup = "No of cyinder", 
+              marker = list(color = "aquamarine")) %>%
+    add_trace(x = ~mpg, y = ~gear, type="scatter", mode = "markers",
+              name = "Total No of gears", legendgroup = "Total No of gear", 
+              marker = list(color = "yellow4")) %>%
+    add_trace(x = ~mpg, y = ~am, type="scatter", mode = "markers",
+              name = "Total No of am", legendgroup = "Total No of am", 
+              marker = list(color = "#33FF00")) %>%
+    add_trace(x = ~mpg, y = ~vs, type="scatter", mode = "markers",
+              name = "Total No of vs", legendgroup = "Total No of vs", 
+              marker = list(color = "#FF99FF")) %>%
+    add_trace(x = ~mpg, y = ~carb, type="scatter", mode = "markers",
+              name = "Total No of carbs", legendgroup = "Total No of carb", 
+              marker = list(color = "antiquewhite4")) 
+```
+
+

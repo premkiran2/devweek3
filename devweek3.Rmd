@@ -33,5 +33,15 @@ plot_ly(mtcars) %>%
               name = "Total No of carbs", legendgroup = "Total No of carb", 
               marker = list(color = "antiquewhite4")) 
 ```
+In the above i used scaterred plot for representing the output data.
+
+And i used different colour code and colour to easily distingush data from other output which is best for humans to see the difference betwenn with naked eye.
+
+There are diffferent ways to produce the output but for this model of output scatter plot is best suitable and i used it to get the desired output for my peer graded assignment.
+
+This assignment helped me a lot to get know about the colour codes, plots, getting relationsships between data. It is helpful for use for doing this peer and it inceases
+the thinkng ability of use.
+
+It took me about 2 to 3 hours to complete this peer graded asiiggnment and it is purely done by me.
 
 
